@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZapFlow Pro</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="loading">
+  <div class="splash-box">
+    <div class="logo">⚡ ZapFlow Pro</div>
+    <div class="spinner"></div>
+    <p class="loading-text">Inicializando sistema...</p>
+  </div>
+</div>
+
+<div class="bg"></div>
+
+<div class="container">
+
+<h1>💬 ZapFlow Pro</h1>
+<p class="subtitle">Envie mensagens no WhatsApp como um profissional</p>
+
+<div class="badge">Teste grátis: 2 dias</div>
+
+<div class="card">
+  <h2>Mensagem</h2>
+  <textarea id="msg">mensagem aqui</textarea>
+  <button onclick="copiar()">Copiar</button>
+</div>
+
+<div class="card">
+  <h2>Número</h2>
+  <input id="numero" placeholder="5521999999999">
+  <button onclick="gerarLink()">Gerar Link</button>
+</div>
+
+  <div class="card">
+  <h2>Links Gerados</h2>
+
+  <p id="statusLista"></p>
+
+  <div id="linksContainer"></div>
+
+  <button onclick="abrirTodos()">Abrir Todos</button>
+  <button onclick="copiarLinks()">Copiar</button>
+</div>
+
+<h2 class="plan-title">Planos</h2>
+
+<div class="plans">
+
+<div class="plan">
+  <h3>Semanal</h3>
+  <span>R$9,90</span>
+  <p>Ideal para testes rápidos</p>
+  <button onclick="comprar('Semanal - 9,90')">Comprar</button>
+</div>
+
+<div class="plan destaque">
+  <div class="tag">Mais Popular</div>
+  <h3>Mensal</h3>
+  <span>R$19,90</span>
+  <p>Melhor custo benefício</p>
+  <button onclick="comprar('Mensal - 19,90')">Comprar</button>
+</div>
+
+<div class="plan">
+  <h3>Anual</h3>
+  <span>R$57,90</span>
+  <p>Economize e ganhe prioridade</p>
+  <button onclick="comprar('Anual - 57,90')">Comprar</button>
+</div>
+
+</div>
+
+</div>
+
+<div id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
